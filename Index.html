@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Stone Paper Scissor
+    </title>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <p class="heading">Stone Paper Scissor</p>
+    <button class="move" onclick="
+      Play('Stone');
+    "><img class="icon" src="Stone paper Scissor images/Stone-emoji.png"></button>
+    <button class="move" onclick="
+      Play('Paper');
+    "><img class="icon" src="Stone paper Scissor images/Paper-emoji.png"></button>
+    <button class="move" onclick="
+      Play('Scissor');
+    "><img class="icon" src="Stone paper Scissor images/Scissor-emoji.png"></button>
+    <p class="js-moves"></p>
+    <p class="js-result"></p>
+    <p class="js-score"></p>
+    <button class="resetit" onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.draws = 0;
+      alert(`Score is successfully reset.
+WINS -> ${score.wins}, DRAWS -> ${score.draws}, LOSSES -> ${score.losses}`)
+    updateScore();
+    ">RESET SCORE</button>
+    
+        
+        
+    <script src="Script.js"></script>
+  </body>
+</html>
