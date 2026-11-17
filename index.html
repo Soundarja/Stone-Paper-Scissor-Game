@@ -24,6 +24,7 @@
       score.wins = 0;
       score.losses = 0;
       score.draws = 0;
+      localStorage.setItem('score', JSON.stringify(score));
       alert(`Score is successfully reset.
 WINS -> ${score.wins}, DRAWS -> ${score.draws}, LOSSES -> ${score.losses}`)
     updateScore();
